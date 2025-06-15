@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# NFC to Bring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Eine React-Web-App, die als Schnittstelle zwischen NFC-Tags und der Bring-App-API funktioniert. Die App ermöglicht es, Lebensmittel per NFC-Tag zu scannen und diese automatisch in der Bring-App zu bestellen.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Liste von Lebensmitteln mit NFC-Verknüpfungsstatus
+- Generierung von NFC-Links für jedes Lebensmittel
+- Integration mit Tasker für Android-NFC-Scans
+- Moderne, responsive Benutzeroberfläche mit Bootstrap
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Repository klonen:
+```bash
+git clone https://github.com/azetxxx/nfc-to-bring.git
+cd nfc-to-bring
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Abhängigkeiten installieren:
+```bash
+npm install
+```
 
-### `npm test`
+3. Entwicklungsserver starten:
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Die App ist dann unter `http://localhost:3000` erreichbar.
 
-### `npm run build`
+## NFC-Setup mit Tasker
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **NFC-Tag vorbereiten**
+   - Beschreibbaren NFC-Tag besorgen (z.B. NTAG213)
+   - NFC auf dem Android-Gerät aktivieren
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Tasker einrichten**
+   - Tasker aus dem Play Store installieren
+   - Neues Profil erstellen (Event > NFC)
+   - Task mit "URL öffnen" Aktion erstellen
+   - URL format: `http://<deine-domain>/nfc/<lebensmittel-name>`
+   - NFC-Tag mit Task verknüpfen
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+Die App kann auf GitHub Pages gehostet werden:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Repository auf GitHub erstellen
+2. GitHub Pages in den Repository-Einstellungen aktivieren
+3. App deployen:
+```bash
+npm run deploy
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologien
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React
+- TypeScript
+- Bootstrap
+- React Router
+- GitHub Pages
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Lizenz
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
