@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nfc-to-bring/static/css/main.2544e43a.css",
-    "main.js": "/nfc-to-bring/static/js/main.bbb921a1.js",
+    "main.js": "/nfc-to-bring/static/js/main.c895ad49.js",
     "static/js/453.eebe3e0f.chunk.js": "/nfc-to-bring/static/js/453.eebe3e0f.chunk.js",
     "index.html": "/nfc-to-bring/index.html",
     "main.2544e43a.css.map": "/nfc-to-bring/static/css/main.2544e43a.css.map",
-    "main.bbb921a1.js.map": "/nfc-to-bring/static/js/main.bbb921a1.js.map",
+    "main.c895ad49.js.map": "/nfc-to-bring/static/js/main.c895ad49.js.map",
     "453.eebe3e0f.chunk.js.map": "/nfc-to-bring/static/js/453.eebe3e0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2544e43a.css",
-    "static/js/main.bbb921a1.js"
+    "static/js/main.c895ad49.js"
   ]
 }
